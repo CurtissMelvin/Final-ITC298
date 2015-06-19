@@ -1,0 +1,20 @@
+  <div id="wrapper">
+    <div id="header">
+    <h1>Keeping Organized with Your Personal To Do List</h1>
+    </div>
+
+        <ul class="list">
+            <h2>Enter your To Do Items Below</h2>
+                {{#reminders}}
+                  <li>
+                    {{Description}}<br />
+                    {{Date}}<br />
+                    {{Status}}<br />
+                  </li>
+                  {{/reminders}}
+        </ul>
+
+    <div id="footer">
+      <p>Created by Curtiss Melvin - ITC298 Final Project</p>
+    </div>
+  </div>
