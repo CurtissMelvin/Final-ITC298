@@ -1,10 +1,9 @@
 //postLogin.js
-var db = require("../db");
-var encrypt = require("encrypt");
+var db = require("../database");
+var encrypt = require("crypto");
 
 module.exports = function (req, reply) {
   var hash = encrypt.createHash("sha1");
-
 
   db.connection.get("SELECT * FROM users WHERE username = $username", {
     $username: req.payload.name

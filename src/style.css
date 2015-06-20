@@ -8,50 +8,57 @@
   /* GLOBAL TEXT STYLE*/
   body  {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px;
     letter-spacing: .15px;
     color: black;
     padding-left: 20px;
+    font-size: 30px;
   }
 
   /*LAYOUT*/
   #wrapper {
     width: 800px;
     margin: auto;
-    background-color: F4DE64 ;
-    padding-left: 30px;
+    background-color:#F4DE64 ;
+
+  }
+
+  #main {
+
   }
 
   ul {
-    list-style-type: none;   
+    list-style-type: none;
   }
 
   header {
-    height: 200px;
-    background-color: 72630C;
-    color: black;
-    border-bottom: 5px solid F2D11A;
+    height: 75px;
+    background-color: #72630C;
+    padding: 20px;
+    border-bottom: 8px solid #F2D11A;
     text-align: center;
+    color: black;
 
 
   }
 
   h1 {
-    font-size: 30px;
-    color: F2D11A;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 29px;
+    color: black;
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
   }
 
   h2 {
     font-size: 24px;
-    color: F2D11A;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #F2D11A;
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
   }
 
   footer {
-    height: 200px;
-    background-color: 72630C;
+    height: 75px;
+    font-size: 15px;
+    background-color: #72630C;
     color: black;
-    border-top: 5px solid F2D11A;
+    border-top: 8px solid #F2D11A;
     text-align: center;
+    padding: 20px;
   }

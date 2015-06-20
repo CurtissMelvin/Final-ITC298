@@ -7,15 +7,16 @@
     var ListCollection = Backbone.Model.extend({
       defaults: {
         id:"",
-        Description: "",
-        Date: "",
-        Status: ""
+        description: "",
+        date: "",
+        status: ""
       },
 
       create: function(callback) {
           callback = callback || function() {};
           //get its own database
           var data = this.toJSON();
+          console.log("CREATE", data);
           //run an INSERT on the database
           var q = "INSERT INTO lists (description, date, status) VALUES ($description, $date, $status);";
           //pass in its database

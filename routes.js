@@ -32,9 +32,20 @@
         path: "/assets/{param*}",
         handler: {
           directory: {
-            path: "./src/build"
-      }
-    }
-  }
+            path: "./src"
+          }
+        }
+      },
 
+      {
+      path: "/login",
+      method: "GET",
+      handler: require("./handlers/getLogin")
+      },
+
+      {
+        path: "/login",
+        method: "POST",
+        handler: require("./handlers/postLogin")
+      },
   ];

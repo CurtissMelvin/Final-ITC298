@@ -1,9 +1,7 @@
-var ToDoList = require("../models/list");
+var ListCollection = require("../models/ListCollection");
 
 module.exports = function(req, reply) {
-  var list = new ToDoList({
-    id: 2
-  });
+  var list = new ListCollection();
   list.load(function() {
     var data = list.toJSON();
     console.log(data);
