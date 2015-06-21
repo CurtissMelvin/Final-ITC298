@@ -26,8 +26,14 @@
 
   }
 
+  #form {
+    padding-left: 30px;
+    padding: 90px 0 90px 0;
+  }
+
   ul {
     list-style-type: none;
+    list-style-position: inside;
   }
 
   header {
